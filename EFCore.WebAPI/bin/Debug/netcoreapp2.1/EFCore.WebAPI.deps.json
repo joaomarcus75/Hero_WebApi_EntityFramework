@@ -28,6 +28,8 @@
     ".NETCoreApp,Version=v2.1": {
       "EFCore.WebAPI/1.0.0": {
         "dependencies": {
+          "EFCore.Dominio": "1.0.0",
+          "EfCore.Repo": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0"
@@ -37,6 +39,28 @@
         },
         "compile": {
           "EFCore.WebAPI.dll": {}
+        }
+      },
+      "EFCore.Dominio/1.0.0": {
+        "runtime": {
+          "EFCore.Dominio.dll": {}
+        },
+        "compile": {
+          "EFCore.Dominio.dll": {}
+        }
+      },
+      "EfCore.Repo/1.0.0": {
+        "dependencies": {
+          "EFCore.Dominio": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
+        },
+        "runtime": {
+          "EfCore.Repo.dll": {}
+        },
+        "compile": {
+          "EfCore.Repo.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3167,6 +3191,16 @@
   },
   "libraries": {
     "EFCore.WebAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EFCore.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EfCore.Repo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
